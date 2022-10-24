@@ -1,3 +1,4 @@
+// clock functionality
 const updateTime = () => {
   clock.hours.innerText = time.getHours() < 10 ? `0${time.getHours()}` : time.getHours()
   clock.minutes.innerText = time.getMinutes() < 10 ? `0${time.getMinutes()}` : time.getMinutes()
@@ -14,5 +15,13 @@ let clock = {
   minutes: document.querySelector('#minutes'),
   seconds: document.querySelector('#seconds')
 }
+
+fetch('http://ip-api.com/json/')
+.then(res => res.json())
+.then(res => {
+  console.log(res)
+  document.querySelector('#country').innerHTML = `Time in ${res.city}, ${res.country}`
+})
+.catch(msg => console.error(msg))
 
 ;(updateTime)()
