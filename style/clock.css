@@ -1,0 +1,10 @@
+.main-clock span {
+  font-size: 5em;
+  font-weight: 900;
+}
+.main-clock span:nth-child(5) { opacity: 0.5 }
+.main-clock span:nth-child(2),
+.main-clock span:nth-child(4) {
+  margin: 0 10px;
+  font-size: 4em;
+}

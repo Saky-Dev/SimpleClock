@@ -16,12 +16,10 @@ let clock = {
   seconds: document.querySelector('#seconds')
 }
 
+// Here an IP API is consume to get the user location through ip
 fetch('http://ip-api.com/json/')
 .then(res => res.json())
-.then(res => {
-  console.log(res)
-  document.querySelector('#country').innerHTML = `Time in ${res.city}, ${res.country}`
-})
+.then(res => { document.querySelector('#country').innerHTML = `Time in ${res.city}, ${res.country}` })
 .catch(msg => console.error(msg))
 
 ;(updateTime)()
