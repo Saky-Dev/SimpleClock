@@ -10,7 +10,7 @@
   <header>
     <nav>
       <ul>
-        <li><a href='/' class='selected'>Clock</a></li>
+        <li><a href='/' class='selected' tabindex='-1'>Clock</a></li>
         <li><a href='/'>Stopwatch</a></li>
         <li><a href='/'>Timer</a></li>
       </ul>
@@ -26,6 +26,10 @@
       <span>:</span>
       <span id='seconds'></span>
       <span id='meridiem'></span>
+    </div>
+    <div class='switch'>
+      <button class='switch-action off' id='time-format-changer'></button>
+      <span class='switch-label'>Formato de 12 horas</span>
     </div>
   </main>
   <footer>

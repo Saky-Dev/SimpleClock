@@ -22,12 +22,19 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 300;
-  transition: 0.15s ease-in-out;
-  -webkit-text-stroke: 0.5px transparent;
+  transition: 0.3s ease;
+  color: var(--clrContrast);
+  -webkit-text-stroke: 1px transparent;
 }
-nav ul li a:hover,
-nav ul li a:focus,
 nav ul li .selected {
+  -webkit-text-stroke: 1px var(--clrMain);
+  color: var(--clrMain);
+}
+nav ul li a {
   outline: none;
+}
+nav ul li a:not(.selected):hover,
+nav ul li a:not(.selected):focus {
   -webkit-text-stroke: 1px var(--clrContrast);
+  color: var(--clrContrast);
 }

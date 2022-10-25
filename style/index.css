@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Work+Sans:wght@400;700&display=swap');
 @import url(./colors.css);
 @import url(./header.css);
 @import url(./footer.css);
@@ -27,7 +27,7 @@ h1 {
   font-size: 2em;
   font-weight: 600;
 }
-h2 {
+h2   {
   font-size: 1em;
   font-weight: 300;
 }

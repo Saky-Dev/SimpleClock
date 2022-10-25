@@ -1,10 +1,76 @@
-.main-clock span {
+.main-clock {
+  border-top: 2px solid var(--clrMain);
+  margin: 4px 0 10px 0;
+  width: 18vw;
+}
+.complete-format {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+  align-items: center;
+  justify-items: center;
+}
+.main-clock span:nth-child(2n+1) {
   font-size: 5em;
   font-weight: 900;
+  font-family: 'Work Sans', sans-serif;
 }
-.main-clock span:nth-child(5) { opacity: 0.5 }
-.main-clock span:nth-child(2),
-.main-clock span:nth-child(4) {
-  margin: 0 10px;
+.main-clock span:nth-child(5) {
+  opacity: 0.5;
+}
+.main-clock span:nth-child(2n) {
   font-size: 4em;
+  font-weight: 400;
+}
+.complete-format #meridiem {
+  display: none;
+}
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.switch .switch-action {
+  width: 56px;
+  height: 28px;
+  border-radius: 15px;
+  border: none;
+  outline: 2px solid var(--clrContrast);
+  outline-offset: -2px;
+  position: relative;
+  transition: 0.2s ease;
+}
+.switch .switch-action.off {
+  background: var(--clrBackground);
+}
+.switch .switch-action.on {
+  background: var(--clrSecond);
+}
+.switch .switch-action::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  background: var(--clrContrast);
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.switch .switch-action.off::after {
+  left: 4px;
+}
+.switch .switch-action.on::after {
+  left: calc(100% - 24px);
+}
+.switch .switch-label {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 10px;
+  transition: 0.2s ease;
+}
+.switch .switch-action.off + .switch-label {
+  opacity: 0.5;
+}
+.switch .switch-action.on + .switch-label {
+  opacity: 1;
 }
