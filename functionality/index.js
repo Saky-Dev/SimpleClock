@@ -1,15 +1,25 @@
 // clock functionality
 const updateTime = () => {
-  clock.hours.innerText = time.getHours() < 10 ? `0${time.getHours()}` : time.getHours()
+  let hours = 0
+  if (meridiemFormat && time.getHours() > 12) {
+    hours = time.getHours() - 12
+    document.querySelector('#meridiem').innerHTML = 'pm'
+  } else {
+    hours = time.getHours()
+    document.querySelector('#meridiem').innerHTML = 'am'
+  }
+  clock.hours.innerText = hours < 10 ? `0${hours}` : hours
   clock.minutes.innerText = time.getMinutes() < 10 ? `0${time.getMinutes()}` : time.getMinutes()
   clock.seconds.innerText = time.getSeconds() < 10 ? `0${time.getSeconds()}` : time.getSeconds()
-
-  time.setTime(time.getTime() + 1000)
 }
 
 const time = new Date()
-const updater = setInterval(updateTime, 1000)
+const updater = setInterval(() => {
+  updateTime()
+  time.setTime(time.getTime() + 1000)
+}, 1000)
 
+let meridiemFormat = false
 let clock = {
   hours: document.querySelector('#hours'),
   minutes: document.querySelector('#minutes'),
@@ -23,3 +33,11 @@ fetch('http://ip-api.com/json/')
 .catch(msg => console.error(msg))
 
 ;(updateTime)()
+
+// format changer
+document.querySelector('#time-format-changer').addEventListener('click', e => {
+  meridiemFormat = !meridiemFormat
+  e.target.className = `switch-action ${meridiemFormat ? 'on' : 'off'}`
+  document.querySelector('.main-clock').className = `main-clock ${meridiemFormat ? 'meridiem' : 'complete'}-format`
+  updateTime()
+})

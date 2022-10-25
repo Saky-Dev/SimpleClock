@@ -2,13 +2,12 @@
   border-top: 2px solid var(--clrMain);
   margin: 4px 0 10px 0;
   width: 18vw;
-}
-.complete-format {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 30% 5% 30% 5% 30%;
   align-items: center;
   justify-items: center;
+  position: relative;
 }
 .main-clock span:nth-child(2n+1) {
   font-size: 5em;
@@ -24,6 +23,18 @@
 }
 .complete-format #meridiem {
   display: none;
+}
+.meridiem-format #meridiem {
+  display: flex;
+}
+#meridiem {
+  position: absolute;
+  bottom: 15%;
+  left: 102%;
+  color: var(--clrContrast);
+  font-size: 1.5em;
+  opacity: 0.5;
+  font-weight: 300;
 }
 .switch {
   display: flex;
