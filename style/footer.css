@@ -1,0 +1,39 @@
+footer {
+  width: 90vw;
+  height: 8vh;
+  display: grid;
+  grid-template-columns: 1fr 24vw 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: flex-start;
+}
+footer span {
+  font-size: 0.9em;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+}
+footer ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+footer ul li a img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
+  transition: 0.15s ease;
+}
+footer ul li a:focus,
+footer ul li a:hover {
+  outline: none;
+}
+footer ul li a:focus img,
+footer ul li a:hover img {
+  opacity: 1;
+}

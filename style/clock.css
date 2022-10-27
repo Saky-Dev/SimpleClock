@@ -50,6 +50,12 @@
   outline-offset: -2px;
   position: relative;
   transition: 0.2s ease;
+  box-shadow: 0 0 0 0 var(--clrContrast);
+  cursor: pointer;
+}
+.switch .switch-action:focus,
+.switch .switch-action:hover {
+  box-shadow: 0 0 3px 1px var(--clrContrast);
 }
 .switch .switch-action.off {
   background: var(--clrBackground);

@@ -41,3 +41,5 @@ document.querySelector('#time-format-changer').addEventListener('click', e => {
   document.querySelector('.main-clock').className = `main-clock ${meridiemFormat ? 'meridiem' : 'complete'}-format`
   updateTime()
 })
+
+document.querySelector('.selected').addEventListener('click', e => e.preventDefault())
