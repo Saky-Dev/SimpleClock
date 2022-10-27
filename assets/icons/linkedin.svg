@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="211.66667mm"
+   height="211.66667mm"
+   viewBox="0 0 211.66667 211.66667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="linkedin.svg"
+   inkscape:export-filename="C:\Users\garci\projects\isaacgh-dev\assets\icons\png\linkedin.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title15099">linkedin</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77593294"
+     inkscape:cx="152.71938"
+     inkscape:cy="354.41207"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.68197465,-32.052811)">
+    <path
+       id="rect846"
+       style="fill:#0077b7;fill-opacity:1;stroke-width:1.12598;stroke-linecap:round;stroke-linejoin:round"
+       d="M 95.369141 0 C 42.53468 9.4739031e-15 0 42.53468 0 95.369141 L 0 704.63086 C 9.4739031e-15 757.46532 42.53468 800 95.369141 800 L 704.63086 800 C 757.46532 800 800 757.46532 800 704.63086 L 800 95.369141 C 800 42.53468 757.46532 0 704.63086 0 L 95.369141 0 z M 227.94922 173.74219 C 242.72354 173.74219 254.50238 177.93684 263.28711 186.32227 C 272.07184 194.70769 276.46484 205.38779 276.46484 218.36523 C 276.46484 231.54234 271.97267 242.32356 262.98828 250.70898 C 254.20355 259.09441 242.52389 263.28711 227.94922 263.28711 C 213.37455 263.28711 201.59572 259.09441 192.61133 250.70898 C 183.82659 242.32356 179.43359 231.54234 179.43359 218.36523 C 179.43359 205.38779 183.72547 194.70769 192.31055 186.32227 C 201.09528 177.93684 212.97524 173.74219 227.94922 173.74219 z M 518.14453 296.23047 C 552.48486 296.23047 578.03969 306.31356 594.81055 326.47852 C 611.5814 346.64347 620.1671 376.78966 620.56641 416.91992 L 620.56641 626.25586 L 534.01758 626.25586 L 534.01758 419.01758 C 534.01758 400.6495 530.02323 387.37132 522.03711 379.18555 C 514.05099 370.80012 500.77476 366.60742 482.20703 366.60742 C 457.84936 366.60742 439.58118 376.98999 427.40234 397.75391 L 427.40234 626.25586 L 340.85352 626.25586 L 340.85352 302.2207 L 422.31055 302.2207 L 425.00586 339.6543 C 448.16561 310.7046 479.21219 296.23047 518.14453 296.23047 z M 184.52539 302.2207 L 271.37305 302.2207 L 271.37305 626.25586 L 184.52539 626.25586 L 184.52539 302.2207 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0.68197465,32.052811)" />
+  </g>
+  <metadata
+     id="metadata15095">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:date>2022.05.19</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>@IsaacGH</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source>Inkscape v1.1</dc:source>
+        <dc:language>english</dc:language>
+        <dc:title>linkedin</dc:title>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>linkedin</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://scripts.sil.org/OFL" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://scripts.sil.org/OFL">
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/Reproduction" />
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/Distribution" />
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/Embedding" />
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/Notice" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/Attribution" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/DerivativeRenaming" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/BundlingWhenSelling" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

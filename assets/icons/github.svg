@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="211.66666mm"
+   height="206.35175mm"
+   viewBox="0 0 211.66665 206.35174"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="github.svg"
+   inkscape:export-filename="C:\Users\garci\projects\isaacgh-dev\assets\icons\png\github.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title5294">github</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="255.26555"
+     inkscape:cy="224.85996"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(24.434949,-31.358197)">
+    <path
+       id="path4782"
+       style="fill:#000000;stroke:none;stroke-width:12.0475;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="M 81.398384,31.358197 A 105.83333,105.83333 0 0 0 -24.434949,137.19153 105.83333,105.83333 0 0 0 44.08534,236.16823 v -0.14667 c 5.602615,2.33645 11.153521,2.84566 11.123248,-3.64649 v -19.88616 c -7.136992,1.50406 -13.898786,1.04508 -20.221829,0.0778 -9.271538,-1.86771 -14.114615,-7.46689 -16.592991,-15.01001 -2.211299,-4.78387 -4.946957,-9.24325 -9.7001537,-12.45711 -6.603008,-4.49271 -7.106359,-7.90896 1.6589577,-6.47679 4.856119,1.05383 11.554786,4.76224 15.670751,12.91292 3.283624,5.164 6.811128,8.05915 14.911094,9.13392 4.866906,0.0952 9.68535,-0.27486 14.290957,-2.71809 1.06882,-4.74051 2.216718,-9.79161 6.89284,-14.53212 -16.970977,-1.622 -26.92325,-6.25822 -34.781335,-13.64258 -15.55959,-13.71779 -19.3293497,-51.0448 -2.501658,-66.79598 -2.446479,-8.330461 -3.649077,-15.850511 0.947829,-28.096071 10.687213,-0.15692 20.06788,5.09985 29.284204,11.03667 11.78306,-3.50019 31.43885,-6.18094 52.810666,0.0171 6.24369,-3.8256 17.29974,-11.86455 28.80188,-10.9342 5.25304,10.03396 3.4312,22.04037 1.22697,28.143771 13.86505,13.71057 15.09684,45.06011 0,64.53723 -10.59135,10.85607 -23.43552,14.41609 -37.45614,16.02764 4.2685,4.59679 7.15956,10.23479 7.12429,17.37655 v 30.26207 c 0.0814,4.67413 1.7297,8.11696 9.34416,5.39555 v 0.0962 A 105.83333,105.83333 0 0 0 187.23171,137.19153 105.83333,105.83333 0 0 0 81.398384,31.358197 Z" />
+  </g>
+  <metadata
+     id="metadata5065">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:date>2022.05.21</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>@IsaacGH</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source>Inkscape v1.1</dc:source>
+        <dc:language>english</dc:language>
+        <dc:title>github</dc:title>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>github; dev</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://scripts.sil.org/OFL" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://scripts.sil.org/OFL">
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/Reproduction" />
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/Distribution" />
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/Embedding" />
+        <cc:permits
+           rdf:resource="http://scripts.sil.org/pub/OFL/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/Notice" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/Attribution" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/DerivativeRenaming" />
+        <cc:requires
+           rdf:resource="http://scripts.sil.org/pub/OFL/BundlingWhenSelling" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
