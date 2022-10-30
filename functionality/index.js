@@ -14,7 +14,7 @@ const updateTime = () => {
 }
 
 const time = new Date()
-const updater = setInterval(() => {
+const localUpdater = setInterval(() => {
   updateTime()
   time.setTime(time.getTime() + 1000)
 }, 1000)
