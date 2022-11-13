@@ -1,7 +1,5 @@
 const updateGlobal = () => {
-  clocks.forEach( emt => {
-    const {DOM, date} = emt
-    
+  clocks.forEach(({DOM, date}) => {
     DOM.innerText =
     `${date.getHours() < 10
       ? `0${date.getHours()}` : date.getHours()

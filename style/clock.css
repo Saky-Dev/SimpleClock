@@ -24,7 +24,7 @@
 .complete-format #meridiem {
   display: none;
 }
-.meridiem-format #meridiem {
+.midday-format #meridiem {
   display: flex;
 }
 #meridiem {
