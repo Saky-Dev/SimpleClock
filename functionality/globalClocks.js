@@ -1,24 +1,22 @@
-const updateGlobal = () => {
-  clocks.forEach(({DOM, date}) => {
-    DOM.innerText =
-    `${date.getHours() < 10
-      ? `0${date.getHours()}` : date.getHours()
-    }:${date.getMinutes() < 10
-      ? `0${date.getMinutes()}` : date.getMinutes()
-    }`
-  })
-}
+let UTCHour = new Date().getUTCHours()
 
-const globalUpdate = setInterval(() => {
-  clocks.forEach( emt => emt.date.setTime(emt.date.getTime() + 1000))
-  updateGlobal()
-}, 1000)
-
-utcHour = new Date().getUTCHours()
-clocks = ['newyork', 'london', 'tokyo'].map( emt => ({
-  DOM: document.querySelector(`.clock#ct-${emt}`),
+const globalClocks = ['newyork', 'london', 'tokyo'].map(item => ({
+  DOM: document.querySelector(`.clock#ct-${item}`),
   date: new Date()
 }))
 
-;[-4, 1, 9].forEach((emt, i) => clocks[i].date.setHours(utcHour + emt))
-;(updateGlobal)()
+const updateGlobalClock = () => {
+  globalClocks.forEach(({DOM, date}) => {
+    const hrs = date.getHours()
+    const min = date.getMinutes()
+
+    date.setTime(date.getTime() + 1000)
+    DOM.innerText = `${ hrs < 10 ? `0${hrs}` : hrs}:${min < 10 ? `0${min}` : min}`
+  })
+
+}
+
+const globalTimeUpdater = setInterval(updateGlobalClock, 1000)
+
+;[-4, 1, 9].forEach((item, i) => globalClocks[i].date.setHours(UTCHour + item))
+;(updateGlobalClock)()

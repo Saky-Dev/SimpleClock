@@ -1,4 +1,3 @@
-// variables --
 let middayFormat = false
 
 const date  = new Date()
@@ -29,7 +28,6 @@ const updateClock = () => {
 
 const timeUpdater = setInterval(updateClock, 1000)
 
-// events --
 // button's event to change the clock format
 document.querySelector('#format-changer').addEventListener('click', e => {
   let hrs = date.getHours()
