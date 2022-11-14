@@ -20,24 +20,24 @@
     <div class='principal'>
       <h1 id='page-title'>Stopwatch</h1>
       <div class='main-time'>
-        <span id='min'></span>
+        <span id='min'>00</span>
         <span>:</span>
-        <span id='sec'></span>
+        <span id='sec'>00</span>
         <span>:</span>
-        <span id='msc'></span>
+        <span id='msc'>00</span>
       </div>
       <div class='buttons'>
-        <button class='sw-action complete'>
+        <button class='sw-action complete' id='start'>
           <img src='' alt='Start'>
           <span>Start</span>
         </button>
-        <button class='sw-action small'>
+        <button class='sw-action small' id='pause'>
           <img src='' alt='Pause'>
         </button>
-        <button class='sw-action small'>
+        <button class='sw-action small' id='stop'>
           <img src='' alt='Stop'>
         </button>
-        <button class='sw-action small'>
+        <button class='sw-action small' id='restart'>
           <img src='' alt='Restart'>
         </button>
       </div>
@@ -71,5 +71,6 @@
       </li>
     </ul>
   </footer>
+  <script src='./functionality/stopwatch.js'></script>
 </body>
 </html>

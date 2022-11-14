@@ -16,14 +16,16 @@ const setMeridiem = hrs => {
 }
 
 const updateClock = () => {
-  let hrs = date.getHours()
-  let min = date.getMinutes()
-  let sec = date.getSeconds()
+  const now = {
+    hrs: date.getHours(),
+    min: date.getMinutes(),
+    sec: date.getSeconds()
+  }
 
-  hrs = setMeridiem(hrs)
+  now.hrs = setMeridiem(now.hrs)
   date.setTime(date.getTime() + 1000)
 
-  ;[hrs, min, sec].forEach((item, i) => clock[i].innerHTML = item < 10 ? `0${item}` : item)
+  Object.keys(now).forEach((item, i) => clock[i].innerHTML = now[item] < 10 ? `0${now[item]}` : now[item])
 }
 
 const timeUpdater = setInterval(updateClock, 1000)
