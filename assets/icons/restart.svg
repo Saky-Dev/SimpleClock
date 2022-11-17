@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="182.93362mm"
+   height="161.40012mm"
+   viewBox="0 0 182.93362 161.40011"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="restart.svg"
+   inkscape:export-filename="..\png\restart.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title4395">restart</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="272"
+     inkscape:cy="314"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(30.883109,-78.759338)">
+    <path
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:16;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 29.255381,218.70376 c 29.13377,21.58592 76.348229,17.80911 101.011139,-16.51678 22.53803,-30.47623 13.49484,-67.56276 0.78935,-84.51745 C 108.07927,85.439295 62.393078,75.207566 26.713338,101.91003 0.94993726,122.2649 -5.523645,152.7336 0.76568536,177.13171"
+       id="path338"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M -22.883109,163.83887 0.66022583,177.10788 23.183635,159.97267"
+       id="path1840" />
+  </g>
+  <metadata
+     id="metadata4391">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:date>2022.11.14</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>@IsaacGH</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source>Inkscape v1.2</dc:source>
+        <dc:language>english</dc:language>
+        <dc:title>restart</dc:title>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>restart; reboot</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

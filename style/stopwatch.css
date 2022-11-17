@@ -75,3 +75,7 @@
   margin-left: 5px;
   color: var(--clrContrast);
 }
+.principal .buttons .sw-action img {
+  height: 18px;
+  filter: brightness(0) invert(1);
+}

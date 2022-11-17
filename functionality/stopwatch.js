@@ -25,9 +25,7 @@ const updateStopwatch = () => {
   Object.keys(now).forEach((item, i) => clock[i].innerHTML = now[item] < 10 ? `0${now[item]}` : now[item])
 }
 
-const pauseText = isPause => {
-  document.querySelector('#start span').innerHTML = isPause ? 'Continue' : 'Start'
-}
+const pauseText = isPause => document.querySelector('#start span').innerHTML = isPause ? 'Continue' : 'Start'
 
 document.querySelector('#restart').addEventListener('click', () => {
   pauseText(false)
