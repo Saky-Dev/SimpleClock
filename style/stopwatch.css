@@ -56,8 +56,12 @@
   background: var(--clrMain);
   box-shadow: 0 2px 0 2px #0005;
   transition: 0.15s ease;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
 }
-.principal .buttons .sw-action:hover {
+.principal .buttons .sw-action:hover,
+.principal .buttons .sw-action:focus {
+  outline: 2px solid var(--clrBackground);
   background: var(--clrBMain);
 }
 .principal .buttons .sw-action:active {
