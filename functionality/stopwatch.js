@@ -11,19 +11,28 @@ const getNow = () => ({
   msc: time.getMilliseconds() / 10
 })
 
+// Function to saved time into record
 const saveTime = () => {
   const now = getNow()
 
-  if (now.min > 0 && now.sec > 0 && now.msc){
-    if (saved.length >= 5)
+  if (now.min > 0 || now.sec > 0 || now.msc > 0) {
+    if (saved.length >= 3)
       saved.splice(0, 1)
 
     saved.push(`${
       Object.keys(now).map(item => `${now[item] < 10 ? `0${now[item]}` : now[item]}`)
     }`.replaceAll(',', ':'))
+
+    saved.forEach((item, i) => {
+      document.querySelector(`#rcd-${i}`).innerHTML = item
+      document.querySelector(`#rcd-${i}`).parentElement.className = 'record fill'
+    })
+
+    updateStopwatch()
   }
 }
 
+// Funtrion to set to zero the time
 const restartValues = (doUpdate, doPause, doSave) => {
   clearInterval(stopwatch)
   stopwatch = undefined
@@ -35,14 +44,15 @@ const restartValues = (doUpdate, doPause, doSave) => {
   time.setMinutes(0)
   time.setSeconds(0)
   time.setMilliseconds(0)
-
-  if (doUpdate)
-    updateStopwatch()
   
   if (doPause)
     isPaused = false
+  
+  if (doUpdate)
+    updateStopwatch()
 }
 
+// Function to update time and GUI
 const updateStopwatch = () => {
   const now = getNow()
 
@@ -50,6 +60,7 @@ const updateStopwatch = () => {
   Object.keys(now).forEach((item, i) => clock[i].innerHTML = now[item] < 10 ? `0${now[item]}` : now[item])
 }
 
+// Stopwatch's buttons events
 document.querySelector('#restart').addEventListener('click', () => restartValues(true, true, false))
 
 document.querySelector('#stop').addEventListener('click', () => restartValues(false, true, true))

@@ -83,3 +83,29 @@
   height: 18px;
   filter: brightness(0) invert(1);
 }
+.history {
+  width: 100%;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.history .record {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1em;
+  transition: 0.2s ease;
+}
+.history .record:not(:last-child) {
+  border-bottom: 1px solid var(--clrContrast);
+}
+.history .record.empty {
+  opacity: 0.6;
+}
+.history .record.fill {
+  opacity: 1;
+}
