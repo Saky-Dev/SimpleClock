@@ -15,13 +15,14 @@ const getNow = () => ({
 const saveTime = () => {
   const now = getNow()
 
-  if (now.min > 0 || now.sec > 0 || now.msc > 0) {
+  if (now.min > 0 || now.sec > 0 || now.msc > 10) {
     if (saved.length >= 3)
       saved.splice(0, 1)
 
-    saved.push(`${
-      Object.keys(now).map(item => `${now[item] < 10 ? `0${now[item]}` : now[item]}`)
-    }`.replaceAll(',', ':'))
+    saved.push(
+      `${Object.keys(now).map(item => `${now[item] < 10 ? `0${now[item]}` : now[item]}`)}`
+      .replaceAll(',', ':')
+    )
 
     saved.forEach((item, i) => {
       document.querySelector(`#rcd-${i}`).innerHTML = item
@@ -34,8 +35,8 @@ const saveTime = () => {
 
 // Funtrion to set to zero the time
 const restartValues = (doUpdate, doPause, doSave) => {
-  clearInterval(stopwatch)
-  stopwatch = undefined
+  // clear interval return an undefined if done correctly
+  !clearInterval(stopwatch) && (stopwatch = undefined)
 
   if (doSave)
     saveTime()
@@ -66,10 +67,10 @@ document.querySelector('#restart').addEventListener('click', () => restartValues
 document.querySelector('#stop').addEventListener('click', () => restartValues(false, true, true))
 
 document.querySelector('#pause').addEventListener('click', () => {
-  if (!stopwatch && isPaused) {
-    stopwatch = setInterval(updateStopwatch, 10)
-    isPaused = !isPaused
-  } else if (stopwatch && !isPaused) {
+  if (!stopwatch && isPaused)
+    (stopwatch = setInterval(updateStopwatch, 10)) && (isPaused = !isPaused)
+
+  else if (stopwatch && !isPaused) {
     clearInterval(stopwatch)
     stopwatch = undefined
     isPaused = !isPaused
@@ -77,10 +78,8 @@ document.querySelector('#pause').addEventListener('click', () => {
 })
 
 document.querySelector('#start').addEventListener('click', () => {
-  if (stopwatch === undefined){
-    stopwatch = setInterval(updateStopwatch, 10)
-    isPaused = false
-  }
+  if (stopwatch === undefined)
+    (stopwatch = setInterval(updateStopwatch, 10)) && (isPaused = false)
 })
 
 ;(() => restartValues(true, false, false))()
