@@ -57,8 +57,12 @@ const restartValues = (doUpdate, doPause, doSave) => {
 const updateStopwatch = () => {
   const now = getNow()
 
-  time.setTime(time.getTime() + 10)
-  Object.keys(now).forEach((item, i) => clock[i].innerHTML = now[item] < 10 ? `0${now[item]}` : now[item])
+  if (time.getHours() >= 1)
+    restartValues(false, false, false)
+  else {
+    time.setTime(time.getTime() + 10)
+    Object.keys(now).forEach((item, i) => clock[i].innerHTML = now[item] < 10 ? `0${now[item]}` : now[item])
+  }
 }
 
 // Stopwatch's buttons events
