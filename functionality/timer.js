@@ -36,10 +36,6 @@ const restartValues = () => {
   }
 }
 
-const timeFinished = () => {
-
-}
-
 const updateTimer = () => {
   let now = undefined
 
@@ -59,15 +55,23 @@ document.querySelector('#restart').addEventListener('click', () => {
 })
 
 document.querySelector('#pause').addEventListener('click', () => {
+  if (!timer && isPaused)
+    (timer = setInterval(updateTimer, 10)) && (isPaused = !isPaused)
 
+  else if (timer && !isPaused) {
+    clearInterval(timer)
+    timer = undefined
+    isPaused = !isPaused
+  }
 })
 
 document.querySelector('#start').addEventListener('click', () => {
-  if (timer === undefined) {
-    if (restartValues() && (time.getMinutes() > 0 || time.getSeconds() > 0)) {
+  if (!timer && isPaused)
+    (timer = setInterval(updateTimer, 10)) && (isPaused = false)
+    
+  else if (!timer && !isPaused)
+    if (restartValues() && (time.getMinutes() || time.getSeconds()))
       timer = setInterval(updateTimer, 10)
-    }
-  }
 })
 
 // set by first time the values as 0

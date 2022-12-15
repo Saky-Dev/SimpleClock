@@ -19,54 +19,6 @@ main {
 #page-title {
   width: 100%;
 }
-.inputs {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 4px 0;
-  border-top: 2px solid var(--clrMain);
-  padding: 2vh 0;
-}
-.inputs .time-input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 45%;
-  outline: 2px solid var(--clrMain);
-  outline-offset: -2px;
-  border-radius: 5px;
-}
-.inputs .time-input h3 {
-  background: var(--clrMain);
-  text-align: center;
-  width: 100%;
-  padding: 2px 0;
-  border-radius: 5px 5px 0 0;
-}
-.inputs .time-input select {
-  width: calc(100% - 4px);
-  background: none;
-  border: none;
-  text-align: center;
-  padding: 8px 0;
-  color: var(--clrContrast);
-  font-size: 1.2em;
-  font-family: 'Work Sans', sans-serif;
-  border-radius: 0 0 5px 5px;
-  transition: 0.15s ease;
-}
-.inputs .time-input select:focus,
-.inputs .time-input select:hover {
-  outline: none;
-  color: var(--clrMain);
-}
-.inputs .time-input select option {
-  color: var(--clrBackground);
-  background: var(--clrContrast);
-  font-family: 'Work Sans', monospace;
-}
 .main-time {
   width: 100%;
   height: fit-content;
@@ -74,6 +26,7 @@ main {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 30% 5% 30% 5% 30%;
+  border-top: 2px solid var(--clrMain);
   align-items: center;
   justify-items: center;
   position: relative;
@@ -133,4 +86,51 @@ main {
 .principal .buttons .t-action img {
   height: 18px;
   filter: brightness(0) invert(1);
+}
+.inputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 2vh 0;
+}
+.inputs .time-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45%;
+  outline: 2px solid var(--clrMain);
+  outline-offset: -2px;
+  border-radius: 5px;
+}
+.inputs .time-input h3 {
+  background: var(--clrMain);
+  text-align: center;
+  width: 100%;
+  padding: 2px 0;
+  border-radius: 5px 5px 0 0;
+}
+.inputs .time-input select {
+  width: calc(100% - 4px);
+  background: none;
+  border: none;
+  text-align: center;
+  padding: 8px 0;
+  color: var(--clrContrast);
+  font-size: 1.2em;
+  font-family: 'Work Sans', sans-serif;
+  border-radius: 0 0 5px 5px;
+  transition: 0.15s ease;
+}
+.inputs .time-input select:focus,
+.inputs .time-input select:hover {
+  outline: none;
+  color: var(--clrMain);
+}
+.inputs .time-input select option {
+  color: var(--clrBackground);
+  background: var(--clrContrast);
+  font-family: 'Work Sans', monospace;
 }

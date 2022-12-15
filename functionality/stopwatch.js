@@ -82,7 +82,7 @@ document.querySelector('#pause').addEventListener('click', () => {
 })
 
 document.querySelector('#start').addEventListener('click', () => {
-  if (stopwatch === undefined)
+  if (!stopwatch)
     (stopwatch = setInterval(updateStopwatch, 10)) && (isPaused = false)
 })
 
