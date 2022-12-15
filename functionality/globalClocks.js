@@ -22,5 +22,5 @@ const updateGlobalClock = () => {
 const globalTimeUpdater = setInterval(updateGlobalClock, 1000)
 
 // the time is added to UTC hour in wach place
-;[-4, 1, 9].forEach((item, i) => globalClocks[i].date.setHours(UTCHour + item))
+;[-5, 0, 9].forEach((item, i) => globalClocks[i].date.setHours(UTCHour + item))
 ;(updateGlobalClock)()

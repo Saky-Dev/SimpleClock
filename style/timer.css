@@ -26,7 +26,6 @@ main {
   justify-content: space-between;
   margin: 4px 0;
   border-top: 2px solid var(--clrMain);
-  border-bottom: 2px solid var(--clrMain);
   padding: 2vh 0;
 }
 .inputs .time-input {
@@ -90,4 +89,48 @@ main {
 .main-time span:nth-child(2n) {
   font-size: 4em;
   font-weight: 400;
+}
+.principal .buttons {
+  width: 18vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.principal .buttons .t-action {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  background: var(--clrMain);
+  box-shadow: 0 2px 0 2px #0005;
+  transition: 0.15s ease;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+.principal .buttons .t-action:hover,
+.principal .buttons .t-action:focus {
+  outline: 2px solid var(--clrBackground);
+  background: var(--clrBMain);
+}
+.principal .buttons .t-action:active {
+  box-shadow: 0 0 0 0 #0005;
+}
+.principal .buttons .t-action.complete {
+  width: 6vw;
+}
+.principal .buttons .t-action.small {
+  width: 3vw;
+}
+.principal .buttons .t-action span {
+  font-weight: 800;
+  font-size: 1.2em;
+  margin-left: 5px;
+  color: var(--clrContrast);
+}
+.principal .buttons .t-action img {
+  height: 18px;
+  filter: brightness(0) invert(1);
 }
